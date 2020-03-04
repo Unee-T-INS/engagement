@@ -51,7 +51,7 @@ Deployment is done automatically with Travis CI:
 
 # Maintenance:
 
-To get the latest version of the go modules we need, uou can run:
+To get the latest version of the go modules we need, you can run:
 `go get -u`
 
 See the [documentation on go modules](https://blog.golang.org/using-go-modules) for more details.
