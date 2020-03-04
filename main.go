@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 	"net/http"
-	"net/url"
+	//"net/url"
 	"os"
 	//"strings"
 
