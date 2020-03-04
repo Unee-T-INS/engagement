@@ -33,14 +33,14 @@ func TestRedirection(t *testing.T) {
 // 		})
 // }
 
-func TestBadURL(t *testing.T) {
-	r := gofight.New()
-	r.GET("/?id=foobar-5311&url=bad&user=21&email=foo@example.com").
-		Run(muxEngine(), func(r gofight.HTTPResponse, rq gofight.HTTPRequest) {
-			assert.Equal(t, http.StatusBadRequest, r.Code)
-			assert.Equal(t, "bad is not a valid URL", strings.TrimSpace(r.Body.String()))
-		})
-}
+// func TestBadURL(t *testing.T) {
+// 	r := gofight.New()
+// 	r.GET("/?id=foobar-5311&url=bad&user=21&email=foo@example.com").
+// 		Run(muxEngine(), func(r gofight.HTTPResponse, rq gofight.HTTPRequest) {
+// 			assert.Equal(t, http.StatusBadRequest, r.Code)
+// 			assert.Equal(t, "bad is not a valid URL", strings.TrimSpace(r.Body.String()))
+// 		})
+// }
 
 func TestEmptyURL(t *testing.T) {
 	r := gofight.New()
