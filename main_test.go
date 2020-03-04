@@ -33,6 +33,8 @@ func TestRedirection(t *testing.T) {
 // 		})
 // }
 
+
+// The following test is FAILING - HOTFIX: disable this test for now
 // func TestBadURL(t *testing.T) {
 // 	r := gofight.New()
 // 	r.GET("/?id=foobar-5311&url=bad&user=21&email=foo@example.com").
