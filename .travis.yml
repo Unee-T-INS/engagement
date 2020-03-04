@@ -14,7 +14,6 @@
 #   - AWS_ACCOUNT_SECRET_PROD
 #   - AWS_PROFILE_PROD
 
-sudo: required
 language: go
 
 go:
@@ -34,18 +33,18 @@ deploy:
  # dev
  - provider: script
    script: make
-   skip_cleanup: true
+   edge: true
    on:
       branch: master
  # demo
  - provider: script
    script: AWS_ACCESS_KEY_ID=$AWS_915001051872_ID AWS_SECRET_ACCESS_KEY=$AWS_915001051872_SECRET make demo
-   skip_cleanup: true
+   edge: true
    on:
       branch: master
  # production
  - provider: script
    script: AWS_ACCESS_KEY_ID=$AWS_192458993663_ID AWS_SECRET_ACCESS_KEY=$AWS_192458993663_SECRET make prod
-   skip_cleanup: true
+   edge: true
    on:
       branch: master
