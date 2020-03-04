@@ -1,3 +1,19 @@
+# Variables needed for this script are stored on Travis Settings
+#  - For all environments:
+#    - AWS_DEFAULT_REGION
+#  - For dev environment:
+#    - AWS_ACCOUNT_USER_ID_DEV
+#    - AWS_ACCOUNT_SECRET_DEV
+#    - AWS_PROFILE_DEV
+#  - For Demo environment:
+#   - AWS_ACCOUNT_USER_ID_DEMO
+#   - AWS_ACCOUNT_SECRET_DEMO
+#   - AWS_PROFILE_DEMO
+# - For Prod environment:
+#   - AWS_ACCOUNT_USER_ID_PROD
+#   - AWS_ACCOUNT_SECRET_PROD
+#   - AWS_PROFILE_PROD
+
 sudo: required
 language: go
 
