@@ -28,6 +28,10 @@ dev:
 	# We replace the relevant variable in the up.json file
 	# We use the template defined in up.json.in for that
 	jq $(UPJSON) up.json.in > up.json
+	# BEGING VERY HACKY STUFF
+	# try to go around a deployment issue...
+	up stack delete
+	# END 
 	up deploy production
 
 demo:
