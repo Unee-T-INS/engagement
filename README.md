@@ -1,5 +1,7 @@
 # Overview:
 
+THIS IS NOT WORKING FOR UNEE-T INS
+
 This is used to build the engagement reports that we need when we send email to user.
 
 This is a mandatory repo, omitting this will break the links that we add in the emails to our users.
